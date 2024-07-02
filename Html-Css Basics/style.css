@@ -1,9 +1,12 @@
-body { 
-    background-color: #081B18;
-    color: white
+
+body 
+{ 
+    background-color: rgb(10, 13, 10);
+    color: #DCDCDC 
 }
 
-strong{
-    color: #07FF5B
+strong
+{
+    color: #20f635
 }
 
