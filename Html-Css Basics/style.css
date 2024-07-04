@@ -1,12 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 
 body 
 { 
+    height: 100vh;
+    box-sizing: border-box;
     background-color: rgb(10, 13, 10);
     color: #DCDCDC 
 }
 
-strong
+.titulo-destaque
 {
     color: #20f635
 }
 
+.apresentacao{
+    margin: 10%;
+    display: flex;/*Or inline flex*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo{
+    width: 615px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px ;
+}
+
+.apresentacao__conteudo__paragrafo{
+    font-size: 24px;
+}
