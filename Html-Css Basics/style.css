@@ -18,7 +18,7 @@ body
 }
 
 .apresentacao{
-    margin: 10%;
+    margin: 10% 15%; /*Podemos mexer no espaçamento de perto para longe*/
     display: flex;/*Or inline flex*/
     align-items: center;
     justify-content: space-between;
@@ -26,6 +26,9 @@ body
 
 .apresentacao__conteudo{
     width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /*Espaçamento */
 }
 
 .apresentacao__conteudo__titulo{
@@ -36,4 +39,22 @@ body
 .apresentacao__conteudo__paragrafo{
     font-size: 24px;
     font-family: "Roboto Condensed", sans-serif;
+}
+
+.apresentacao__links{
+    display: flex; /* sempre começar com display flex pois tem elementos no flex box que dependem de um elemento "pai" */
+    justify-content: space-between;
+}
+
+.apresentacao__links__link{
+    background-color: #00a611;
+    width: 280px;
+    text-align: center;
+    border-radius: 16px;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 21.5px 0; /* padding top e  botton*/
+    text-decoration: none;
+    color: #000000;
+    font-family: "Roboto Mono", monospace;
 }
