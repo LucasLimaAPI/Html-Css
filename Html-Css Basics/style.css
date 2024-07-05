@@ -8,13 +8,13 @@ body
 { 
     height: 100vh;
     box-sizing: border-box;
-    background-color: rgb(10, 13, 10);
+    background-color: rgb(5, 30, 5);
     color: #DCDCDC 
 }
 
 .titulo-destaque
 {
-    color: #20f635
+    color: #12d425
 }
 
 .apresentacao{
@@ -43,18 +43,34 @@ body
 
 .apresentacao__links{
     display: flex; /* sempre começar com display flex pois tem elementos no flex box que dependem de um elemento "pai" */
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    
+}
+
+.apresentacao__links__subtitulo{
+    font-family: 'roboto Condensed' , sans-serif;
+    font-weight: 400px;        
+    font-size: 24px;
+    font-family: "Roboto Mono", monospace;
+
 }
 
 .apresentacao__links__link{
-    background-color: #00a611;
-    width: 280px;
+   /* background-color: #00a611; */
+   border:  2px solid #12d425;/*cria uma borda e essas são algumas opções que temos para editar.*/
+    width: 378px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 8px;
     font-weight: 600;
     font-size: 24px;
     padding: 21.5px 0; /* padding top e  botton*/
     text-decoration: none;
-    color: #000000;
-    font-family: "Roboto Mono", monospace;
+    color: #f6f6f6;
+    font-family: 'roboto Condensed' , sans-serif;
+    
 }
+
+ 
