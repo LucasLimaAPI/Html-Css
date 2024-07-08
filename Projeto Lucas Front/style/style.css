@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+    list-style: none;
+}
+.phones{
+    display: flex;
+    gap: 6px;
+    color: #fff;
+}
+.blue-line{
+    background-color: rgb(1, 59, 15);
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+
+}
+.menu{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    align-items: end;
+    margin-bottom: 16px;
+    position: relative;
+}
+.menu a{
+    text-decoration: none;
+    color: #000;
+}
+
+.menu .submenu{
+    display: none;
+}
+
+/* Dropdown dificuldades usei gpt para me auxiliar no JS
+.menu  .submenu:hover{
+    display: block;
+} */
+ .menu .submenu {
+    display: none;
+    position: absolute; /* Posiciona o submenu absolutamente */
+    left: 0;
+    top: 100%; /* O submenu abaixo do item do menu */
+    z-index: 1; /* submenu fique por cima do conteúdo */
+    text-transform: uppercase;
+}
+
+.submenu li{
+    background-color: #014e17;
+    font-size: 12px;
+    padding: 16px;
+}
+
+.submenu a{
+    color: #fff;
+    font-weight: bold;
+}
+
+.dropdown{
+    transition: 0.3s;
+}
+
+.dropdown:hover{
+    color: #07902e;
+}
+
+.submenu .submenu li:nth-child(1),
+.submenu .submenu li:nth-child(2) {
+left: 120%;
+}
+
+.menu li {
+    position: relative; /* Posição relativa para os itens do menu */
+}
+
+/*Slider*/
+.container{
+    max-width: 1024px; /*Tamanho medio notebook*/
+    margin: 0 auto;
+    
+}
+
+.splide{
+    display: block;
+}
+
+.slider-img{
+    width: 100%;
+    max-height: 400px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ccc;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    font-size: 14px;
+}
+/*A partir de 768 pixels vai aplicar o seguinte estilo: (obs) para funcionar repetir todos os nomes de classe que inserimos para os respectivos itens.*/
+@media (max-width: 768px) {
+    .navbar{
+        display: block;
+        text-align: center;
+       }
+    
+       .menu {
+        display: block;
+        width: 100%;
+        background-color: #07902e;
+        color: white;
+        padding: 5px;
+       }
+
+       .menu li{
+        border-radius: 16px;
+        margin-bottom: 6px;
+       }
+    
+       .menu li :hover{
+        background-color: rgb(85, 255, 130);
+       }
+    
+       .menu a {
+        color: #000000;
+       }
+    
+       .menu .submenu{
+        position: relative;
+        top: 0;
+        left: 0;
+        
+       }
+    
+       .submenu .submenu li:nth-child(1),
+        .submenu .submenu li:nth-child(2) {
+      left:0;
+    }
+    
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        padding: 0;
+    }
+}
