@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -9,15 +11,15 @@
     gap: 6px;
     color: #fff;
 }
-.blue-line{
+.green-line{
     background-color: rgb(1, 59, 15);
 }
 
 .navbar{
     display:flex;
     justify-content: space-between;
-
 }
+
 .menu{
     display: flex;
     gap: 10px;
@@ -92,8 +94,77 @@ left: 120%;
     max-height: 400px;
 }
 
+.titulo-destaque
+{
+    color: #07902e
+}
+
+.apresentacao {
+    margin: 5% 10%; /*Podemos mexer no espaçamento de perto para longe*/
+    display: flex;/*Or inline flex*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /*Espaçamento */
+}
+.apresentacao__conteudo__titulo{
+    font-size: 36px ;
+    font-family: "Roboto Mono", monospace;
+}
+
+.apresentacao__conteudo__paragrafo{
+    font-size: 24px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.portfolio {
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.portfolio-coffee{
+    background-color: #000000;
+    color: white;
+    
+}
+
+.coffee-list {
+    list-style-type: none; /* Remove os marcadores de lista */
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Distribui os itens igualmente ao longo do eixo principal */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha se necessário */
+}
+
+.coffee-list li {
+    text-align: center; /* Centraliza o conteúdo */
+    margin-bottom: 20px; /* Espaço entre os itens */
+    flex: 0 0 calc(25% - 20px); /* Distribui cada item em 25% do espaço com 20px de margem entre eles */
+    max-width: calc(25% - 20px); /* Limita a largura máxima de cada item */
+    display: flex; /* Torna o li um flex container */
+    flex-direction: column; /* Coloca o conteúdo em coluna dentro do li */
+    align-items: center; /* Centraliza os itens na direção transversal */
+}
+
+.coffee-list img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner pai */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Garante que a imagem se comporte corretamente dentro do layout */
+    margin-bottom: 10px; /* Espaço opcional entre a imagem e o texto/link abaixo */
+}
+
+.coffee-list a {
+    display: block; /* Transforma o link em um bloco para ocupar toda a largura do pai */
+    color: #333; /* Cor do texto do link */
+    text-decoration: none; /* Remove sublinhado padrão do link */
+}
+
 footer {
-    background-color: #333;
+    background-color: #100f0f;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -187,6 +258,18 @@ footer {
       left:0;
     }
     
+    .apresentacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* centraliza itens no eixo principal (vertical) */
+        text-align: center; /* centraliza texto */
+    }
+    
+    /* Estilos para a imagem */
+    .apresentacao img {
+        max-width: 100%; /* garante que a imagem não ultrapasse a largura do container */
+        margin-top: 20px; /* ajuste opcional para espaçamento superior */
+    }
 
     .footer-container {
         flex-direction: column;
