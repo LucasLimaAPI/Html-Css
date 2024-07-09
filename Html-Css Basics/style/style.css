@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body 
+{ 
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff 
+}
+
+.cabecalho{
+    padding: 2% 0 0 10%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 60px;
+}
+
+.cabecalho__menu :hover{
+    color: #e9fcee;
+    transition: 0.3s;
+    
+}
+
+.cabecalho__menu__link{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 20px;
+    font-weight: 600;
+    color: #00ff37;
+    text-decoration: none;
+}
+
+.titulo-destaque
+{
+    color: #00ff37
+}
+
+.apresentacao{
+    padding: 8% 10%; /*Podemos mexer no espaçamento de perto para longe*/
+    display: flex;/*Or inline flex*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao__conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /*Espaçamento */
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px ;
+    font-family: "Roboto Mono", monospace;
+}
+
+
+
+.apresentacao__conteudo__paragrafo{
+    font-size: 24px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: 'roboto Condensed' , sans-serif;
+    font-weight: 400px;        
+    font-size: 1em;
+    font-family: "Roboto Mono", monospace;
+    display: flex;
+    justify-content: center;
+}
+
+.apresentacao__links{
+    display: flex; /* sempre começar com display flex pois tem elementos no flex box que dependem de um elemento "pai" */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+
+    
+}
+
+.apresentacao__links :hover{
+    background-color: #044d14;
+    transition: 0.5s;
+
+}
+
+
+.apresentacao__links__link{
+   /* background-color: #00a611; */
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    background-color: #00ff37;
+    width: 378px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    padding: 21.5px 0; /* padding top e  botton*/
+    text-decoration: none;
+    color: #000000;
+    font-family: 'roboto Condensed' , sans-serif;
+    
+}
+
+.rodape{
+    padding: 24px;
+    color: #000000;
+    background-color: #00ff37;
+    text-align: center;
+    font-family:'roboto Condensed' , sans-serif; ;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+ 
