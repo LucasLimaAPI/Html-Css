@@ -1,14 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/*Criar uma váriavel de escopo global*/
+:root{
+    --cor-primaria: #61542b;
+    --cor-secundaria: #fff7e8;
+    --cor-terciaria: #e2b28a;
+    --cor-hover:  #ff9100;
+
+    --fonte-primaria:  "Roboto mono", monospace;
+    --fonte-secundaria: "Roboto Condensed", sans-serif;
+}
+
 *{
     padding: 0;
     margin: 0;
 }
 
 body 
-{ 
+{ /*a variavel vai funcionar apenas para o body*/ 
     box-sizing: border-box;
-    background-color: rgb(0, 0, 0);
-    color: #ffffff 
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
 
 .cabecalho{
@@ -21,22 +32,22 @@ body
 }
 
 .cabecalho__menu :hover{
-    color: #e9fcee;
+    color: var(--cor-hover);
     transition: 0.3s;
     
 }
 
 .cabecalho__menu__link{
-    font-family: 'Roboto Mono', monospace;
+    font-family: var(--fonte-primaria);
     font-size: 20px;
     font-weight: 600;
-    color: #00ff37;
+    color: var(--cor-terciaria);
     text-decoration: none;
 }
 
 .titulo-destaque
 {
-    color: #00ff37
+    color: var(--cor-terciaria);
 }
 
 .apresentacao{
@@ -55,21 +66,18 @@ body
 
 .apresentacao__conteudo__titulo{
     font-size: 36px ;
-    font-family: "Roboto Mono", monospace;
+    font-family: var(--fonte-primaria);
 }
-
-
 
 .apresentacao__conteudo__paragrafo{
     font-size: 24px;
-    font-family: "Roboto Condensed", sans-serif;
+    font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__links__subtitulo{
-    font-family: 'roboto Condensed' , sans-serif;
+    font-family: var(--fonte-primaria);
     font-weight: 400px;        
     font-size: 1em;
-    font-family: "Roboto Mono", monospace;
     display: flex;
     justify-content: center;
 }
@@ -85,18 +93,17 @@ body
 }
 
 .apresentacao__links :hover{
-    background-color: #044d14;
-    transition: 0.5s;
+    background-color: var(--cor-hover);
+    transition: 0.3s;
 
 }
-
 
 .apresentacao__links__link{
    /* background-color: #00a611; */
     display: flex;
     justify-content: center;
     gap: 1em;
-    background-color: #00ff37;
+    background-color: var(--cor-terciaria);
     width: 378px;
     text-align: center;
     border-radius: 10px;
@@ -104,17 +111,17 @@ body
     font-size: 24px;
     padding: 21.5px 0; /* padding top e  botton*/
     text-decoration: none;
-    color: #000000;
-    font-family: 'roboto Condensed' , sans-serif;
-    
+    color: black;
+    font-family: var(--fonte-secundaria);
 }
+
 
 .rodape{
     padding: 24px;
-    color: #000000;
-    background-color: #00ff37;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
     text-align: center;
-    font-family:'roboto Condensed' , sans-serif; ;
+    font-family:var(--fonte-secundaria);
     font-size: 24px;
     font-weight: 400;
 }
