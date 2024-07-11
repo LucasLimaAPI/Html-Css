@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
 /*Criar uma váriavel de escopo global*/
 :root{
-    --cor-primaria: #61542b;
-    --cor-secundaria: #fff7e8;
-    --cor-terciaria: #e2b28a;
-    --cor-hover:  #c99f7dad;
+    --cor-primaria: #543310;
+    --cor-secundaria: #F8F4E1;
+    --cor-terciaria: #AF8F6F;
+    --cor-hover:  #74512D;
 
-    --fonte-primaria:  "Roboto mono", monospace;
-    --fonte-secundaria: "Roboto Condensed", sans-serif;
+    --fonte-primaria:  "Abril Fatface", serif;
+    --fonte-secundaria:  "Lora", serif;
 }
 
 *{
@@ -80,7 +81,7 @@ body
     font-size: 1em;
     display: flex;
     justify-content: center;
-    color: var(--cor-secundaria);
+    color: var(--cor-te);
 }
 
 .apresentacao__links{
