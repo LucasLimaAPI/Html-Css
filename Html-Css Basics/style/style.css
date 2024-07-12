@@ -2,7 +2,7 @@
 
 /*Criar uma váriavel de escopo global*/
 :root{
-    --cor-primaria: #543310;
+    --cor-primaria: #3d2409;
     --cor-secundaria: #F8F4E1;
     --cor-terciaria: #AF8F6F;
     --cor-hover:  #74512D;
@@ -40,7 +40,7 @@ body
 
 .cabecalho__menu__link{
     font-family: var(--fonte-primaria);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
@@ -66,19 +66,19 @@ body
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 36px ;
+    font-size: 2.25rem ;
     font-family: var(--fonte-primaria);
 }
 
 .apresentacao__conteudo__paragrafo{
-    font-size: 24px;
+    font-size: 1.50rem;
     font-family: var(--fonte-secundaria);
 }
 
 .apresentacao__links__subtitulo{
     font-family: var(--fonte-primaria);
-    font-weight: 400px;        
-    font-size: 1em;
+    font-weight: 25rem;        
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     color: var(--cor-te);
@@ -89,7 +89,7 @@ body
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 32px;
+    gap: 25px;
 
     
 }
@@ -104,14 +104,14 @@ body
    /* background-color: #00a611; */
     display: flex;
     justify-content: center;
-    gap: 1em;
+    gap: 1rem;
     background-color: var(--cor-terciaria);
     width: 378px;
     text-align: center;
     border-radius: 10px;
     font-weight: 600;
-    font-size: 24px;
-    padding: 21.5px 0; /* padding top e  botton*/
+    font-size: 1.5rem;
+    padding: 21.504px 0; /* padding top e  botton*/
     text-decoration: none;
     color: black;
     font-family: var(--fonte-secundaria);
@@ -124,7 +124,7 @@ body
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family:var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
