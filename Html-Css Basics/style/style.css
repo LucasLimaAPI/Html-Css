@@ -3,9 +3,9 @@
 /*Criar uma váriavel de escopo global*/
 :root{
     --cor-primaria: #3d2409;
-    --cor-secundaria: #e09146;
-    --cor-terciaria: #cca782;
-    --cor-hover:  #613f1c;
+    --cor-secundaria: #e9cfb4;
+    --cor-terciaria: #ffc423;
+    --cor-hover:  #52401e;
 
     --fonte-primaria:  "Abril Fatface", serif;
     --fonte-secundaria:  "Lora", serif;
@@ -59,7 +59,7 @@ body
 }
 
 .apresentacao__conteudo{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px; /*Espaçamento */
@@ -81,7 +81,7 @@ body
     font-size: 1rem;
     display: flex;
     justify-content: center;
-    color: var(--cor-te);
+    color: var(--cor-terciaria);
 }
 
 .apresentacao__links{
@@ -100,13 +100,13 @@ body
 
 }
 
-.apresentacao__links__link{
+.apresentacao__links__navegacao{
    /* background-color: #00a611; */
     display: flex;
     justify-content: center;
     gap: 1rem;
     background-color: var(--cor-terciaria);
-    width: 378px;
+    width: 50%;
     text-align: center;
     border-radius: 10px;
     font-weight: 600;
@@ -115,6 +115,10 @@ body
     text-decoration: none;
     color: black;
     font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__imagem{
+    width: 50%
 }
 
 
