@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+/*Criar uma váriavel de escopo global*/
+:root{
+    --cor-primaria: #3d2409;
+    --cor-secundaria: #e9cfb4;
+    --cor-terciaria: #ffc423;
+    --cor-hover:  #52401e;
+
+    --fonte-primaria:  "Abril Fatface", serif;
+    --fonte-secundaria:  "Lora", serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body 
+{ /*a variavel vai funcionar apenas para o body*/ 
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 2% 0 0 10%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 60px;
+}
+
+.cabecalho__menu :hover{
+    color: var(--cor-hover);
+    transition: 0.3s;
+    
+}
+
+.cabecalho__menu__link{
+    font-family: var(--fonte-primaria);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.titulo-destaque
+{
+    color: var(--cor-terciaria);
+}
+
+.apresentacao{
+    padding: 8% 10%; /*Podemos mexer no espaçamento de perto para longe*/
+    display: flex;/*Or inline flex*/
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /*Espaçamento */
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem ;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__conteudo__paragrafo{
+    font-size: 1.50rem;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 25rem;        
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    color: var(--cor-terciaria);
+}
+
+.apresentacao__links{
+    display: flex; /* sempre começar com display flex pois tem elementos no flex box que dependem de um elemento "pai" */
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+
+    
+}
+
+.apresentacao__links :hover{
+    background-color: var(--cor-hover);
+    transition: 0.3s;
+
+}
+
+.apresentacao__links__navegacao{
+   /* background-color: #00a611; */
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--cor-terciaria);
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 21.504px 0; /* padding top e  botton*/
+    text-decoration: none;
+    color: black;
+    font-family: var(--fonte-secundaria);
+}
+
+.apresentacao__imagem{
+    width: 50%
+}
+
+
+.rodape{
+    padding: 24px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family:var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+ @media (max-width: 1200px){
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content:center ;
+    }
+
+    .apresentacao{
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+
+ }
