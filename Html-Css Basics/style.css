@@ -1,12 +1,32 @@
+*{ /*tirar toda margin e padding é o mais convencional*/
+    margin: 0;
+    padding: 0;
+}
 
 body 
 { 
+    height: 100vh /* Estamos definindo a altura vh é view port ou seja 100vh é 100% da nossa tela  */;
+    box-sizing: border-box;
     background-color: rgb(10, 13, 10);
-    color: #DCDCDC 
+    color: #ffffff 
 }
 
-strong
+.Destaque-Titulo
 {
     color: #20f635
 }
 
+.apresentacao{
+    margin: 10%;
+    display: flex;
+    justify-content: space-between; /*justify-content, comando responsável por justificar, formatando o posicionamento de acordo com o requisito do desenvolvedor.*/
+    align-items: center;
+}
+
+.apresentacao__conteudo{
+    width: 615px;
+}
+
+;.apresentacao__conteudo__titulo{
+    font-size: 36px;
+}
